@@ -1,0 +1,854 @@
+/* ---------------------------------------------------- */
+/*
+    [css-file]: main-about-handlings.css
+    
+    [info]: defines only all styles & css handling for
+    our main card about. 
+    
+    Default styles would be styled in our main.css 
+
+/* ---------------------------------------------------- */
+
+
+
+/* ------------------------------------------------------------------------------- */
+/* About Card Layout
+/* ------------------------------------------------------------------------------- */
+
+
+.about-container {
+
+    padding: 1.3em .8em 2em .8em;
+
+}
+
+
+/* ------------------------------------------------------------------------------- */
+/* General Label ( open / close )
+/* ------------------------------------------------------------------------------- */
+
+.lbl-about-open-close-left ,
+.lbl-about-open-close-right {
+
+    display: grid;
+
+    align-items: center;
+
+    border-radius: .3em;
+    background-color: var(--middle-1-grey);
+    color: var(--black);
+
+    cursor: pointer;
+
+}
+
+.lbl-about-open-close-left {  grid: auto / 1fr 2.5em; }
+
+.lbl-about-open-close-right { grid: auto / 2.5em 1fr;  }
+
+
+
+.lbl-about-open-close-left:hover ,
+.lbl-about-open-close-right:hover{
+
+    transition: .3s;
+    background-color: var(--light-brown);
+    
+}
+
+
+
+/* Label Content Container */
+.lbl-about-open-close-content-container-left ,
+.lbl-about-open-close-content-container-right {
+
+    display: flex;
+    align-items: center;
+    column-gap: .8em;
+    border-radius: .3em 0em 0em .3em;
+
+}
+
+.lbl-about-open-close-content-container-left {
+
+    padding: .3em;
+
+}
+
+.lbl-about-open-close-content-container-right {
+
+    justify-content: space-between;
+    padding-left: .8em;
+    
+    padding-top: .3em;
+    padding-right: .3em;
+    padding-bottom: .3em;
+
+}
+
+
+
+
+
+/* big img */
+.png-lbl-about-open-close { width: 5em; border-radius: .3em; }
+/* line height for sub text */
+.lbl-about-open-close-sub-txt-container { line-height: 1.2em;}
+
+
+
+/* Label Arrow ( IMG ) Container */  
+
+.lbl-about-open-close-arrow-container-left ,
+.lbl-about-open-close-arrow-container-right {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: var(--rainy-dark-2-grey);
+    height: 100%;
+
+}
+
+.lbl-about-open-close-arrow-container-right {
+
+    border-radius: 0em .3em .3em 0em;
+}
+
+.lbl-about-open-close-arrow-container-left {
+
+    border-radius: .3em 0em 0em .3em;
+}
+
+/* arrow img */
+.png-lbl-about-open-close-arrow { width: 1em; }
+
+
+
+/* ----------------------------------------------- */
+/* Label Tech Skills - Handling 
+/* ----------------------------------------------- */
+
+/* default checkbox unshown for no jumping handling */
+input#chk-about-label-tech-skills { display: none; }
+
+/* if label tech skill is checked ( open ) -> open filter panel frontend , backend */
+input#chk-about-label-tech-skills:checked ~ main #trigger-about-filter-container-frontend-backend {
+
+    display: grid;
+}
+
+/* if label tech skill is checked (open) -> be light brown */
+input#chk-about-label-tech-skills:checked ~ main #mytechSkills-container > label[name="chk-name-about-label-tech-skills"] {
+
+    background-color: var(--light-brown);
+    
+}
+
+/* if label tech skill is checked (open) -> change arrow down */
+input#chk-about-label-tech-skills:checked ~ main 
+#mytechSkills-container > label[name="chk-name-about-label-tech-skills"] > div:last-child > img {
+
+    transform: rotate(180deg);
+
+}
+
+
+
+
+/* ------------------------------------------------ */
+/* Vertical Dots Line Container 
+/* ------------------------------------------------ */
+
+.about-card-vertical-3-dots-line-container ,
+.about-card-vertical-1-dots-line-container {
+
+    display: grid;
+    grid: auto / 5em 1fr;
+   
+    align-items: center;
+    justify-items: center;
+
+    /*background-color: green;*/
+
+}
+
+.about-card-vertical-3-dots-line-container {  padding: 1em 0em; }
+.about-card-vertical-1-dots-line-container { padding: .8em 0em; }
+
+
+/* 3 dot lines */
+.about-card-vertical-3-dots-line-container > div:first-child { 
+    
+    height: 3.5em;
+    margin-left: .3em;
+
+    border-left: .8em dotted var(--light-brown);
+
+}
+
+/* 1 dot line */
+.about-card-vertical-1-dots-line-container > div:first-child {
+
+    height: .8em;
+    margin-left: .3em;
+
+    border-left: .8em dotted var(--light-brown);
+}
+
+
+
+
+
+/* ---------------------------------------------------------------------------- */
+/* General Open / Close Container
+/* ---------------------------------------------------------------------------- */
+
+.about-open-close-container {
+
+    padding: 1.8em 1em;
+
+    border-bottom: 1px solid var(--middle-1-grey);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ----------------------------------------------------------------------------------------- */
+/* [1/5] Welcome Container                                                                   */
+/* ----------------------------------------------------------------------------------------- */
+#welcome-container { 
+    
+    padding-bottom: 3.3em;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-top: 1em;
+
+}
+
+#welcome-title-container {
+
+    font-size: 1.1em;
+    font-weight: bold;
+    line-height: 1.4em;
+}
+
+#welcome-hand-unicode {
+
+    font-size: 1.3em;
+    padding-right: .1em;
+}
+
+#png-about-me-welcome {
+
+    float:right;
+    width: 6.5em;
+
+    margin-left: .8em;
+
+    border-radius: .3em .3em .3em .3em;
+}
+
+#welcome-text-container { padding-top: 1em; }
+
+    
+
+
+
+
+
+
+
+
+/* ----------------------------------------------------------------------------------------- */
+/* [2/5] Tech Skills Container                                                               */
+/* ----------------------------------------------------------------------------------------- */
+#mytechSkills-container {
+
+    display: grid;
+    row-gap: 0em;
+
+}
+
+
+
+
+
+
+/* -------------------------------------------------------- */
+/* Filter Panel - Frontend & Backend 
+/* -------------------------------------------------------- */
+
+/* general container */
+.about-filter-container-frontend-backend {
+
+    /* display: grid*/
+    display: none;
+
+    padding-left: 1em;
+    padding-right: 1em;
+  
+}
+
+
+
+
+/* choose header */
+.about-filter-container-choose-header {
+
+    padding-top: .8em;
+
+    font-weight: bold;
+    color: var(--middle-2-grey);
+    border-bottom: 1px solid var(--middle-2-grey);
+}
+
+
+/* filter panel frontend & backend  */
+.about-filter-panel-frontend-backend {
+
+    display: flex;
+    justify-content: center;
+    /*column-gap: 0em;*/
+
+    padding: .8em 0em;
+    border-bottom: 1px solid var(--middle-2-grey);
+    
+    
+    
+}
+
+
+.lbl-about-frontend-backend {
+
+    display: flex;
+    column-gap: .3em;
+
+    padding: .5em;
+
+    cursor: pointer;
+}
+
+.lbl-about-frontend-backend:hover {
+
+    transition: .3s;
+    background-color: var(--rainy-dark-1-grey);
+    border-radius: .3em;
+}
+
+
+/* e.g txt frontend & frontend img */
+.about-frontend-backend-title-img-container {
+
+    display: grid;
+    row-gap: .5em;
+    justify-items: center;
+}
+
+
+
+/* --------------------------------------- */
+/* My own Radio Box & IMG
+/* --------------------------------------- */
+
+.radio-about-frontend-backend-rectangle {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 1.1em;
+    height: 1.1em;
+
+    border-radius: .3em;
+    background-color: var(--rainy-dark-1-grey);
+    border: 2px solid var(--light-brown);
+
+}
+
+.rectancle-frontend-backend {
+
+    background-color: var(--light-brown);
+
+    /*display: flex;*/
+    display: none;
+    align-items: center;
+    justify-content: center;
+
+    width: .8em;
+    height: .8em;
+
+    border-radius: 2px;
+
+}
+
+
+.png-about-frontend-backend { 
+
+    width: 5.3em;
+    border-radius: .3em;
+}
+
+
+
+
+/* ------------------------------------------------- */
+/* Filter Panel Handling - Frontend & Backend 
+/* ------------------------------------------------- */
+
+/* default radio boxes unshown */
+input#radio-about-filter-frontend ,
+input#radio-about-filter-backend {
+
+    display: none;
+   
+}
+
+input#radio-about-filter-frontend:checked ~ main label[for="radio-about-filter-frontend"] .rectancle-frontend-backend ,
+input#radio-about-filter-backend:checked ~ main label[for="radio-about-filter-backend"] .rectancle-frontend-backend {
+    
+    display: flex;
+
+}
+
+ 
+/* default frontend & backend container unshown */
+/* and unshown single frontend & backend content container */
+#trigger-about-frontend-backend-container,
+#trigger-about-frontend-content-container, 
+#trigger-about-backend-content-container { display: none; }
+
+
+/* if checked show first all frontend & backend container */
+input#radio-about-filter-frontend:checked ~ main #trigger-about-frontend-backend-container , 
+input#radio-about-filter-backend:checked ~ main #trigger-about-frontend-backend-container {
+    
+    display: block;
+
+}
+
+
+/* if checked frontend / backend - show  */
+input#radio-about-filter-frontend:checked ~ main #trigger-about-frontend-content-container , 
+input#radio-about-filter-backend:checked ~ main #trigger-about-backend-content-container {
+    
+    display: block;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* -------------------------------------------------------- */
+/* Read More Info Container - Frontend & Backend 
+/* -------------------------------------------------------- */
+
+
+
+#about-read-more-less-frontend-backend-container {
+
+    padding: .5em 0em;
+
+    border-bottom: 1px solid var(--middle-2-grey);
+
+}
+
+/* Header - Read More / Less */
+.about-read-more-less-frontend-backend-header {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    color: var(--middle-2-grey);
+ 
+}
+
+
+/* Label Read More / Less */
+.lbl-read-more-basic-adv-exp , 
+.lbl-read-less-basic-adv-exp {
+
+    border-radius: .3em;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+
+    line-height: 1.3em;
+    padding: .3em 0em;
+
+    cursor: pointer;
+
+
+    width: 3.5em;
+
+}
+
+.lbl-read-more-basic-adv-exp {
+    
+    background-color: var(--rainy-dark-2-grey);
+   
+}
+
+
+.lbl-read-less-basic-adv-exp {
+    
+    background-color: var( --light-red);
+    color: var(--black);
+   
+}
+
+
+.lbl-read-more-basic-adv-exp:hover,
+.lbl-read-less-basic-adv-exp:hover {
+
+    transition: .3s;
+    background-color: var(--light-brown);
+    color: var(--black);
+}
+
+
+/* Label Read More / Less Handling */
+ /* default unshown checkboxes */
+input#chk-lbl-read-basic-adv-exp ,
+#trigger-about-frontend-backend-read-more-info-container {
+
+    display: none;
+}
+
+
+/* if unchecked -> show more only */
+#trigger-lbl-show-less { display: none; }
+
+
+
+/* if checked -> unshown -> show more  */
+input#chk-lbl-read-basic-adv-exp:checked ~ main #trigger-lbl-show-more { display: none ;}
+
+/* if checked -> show -> show less */
+input#chk-lbl-read-basic-adv-exp:checked ~ main #trigger-lbl-show-less { display: grid; }
+
+/* if checked -> show -> info container */
+input#chk-lbl-read-basic-adv-exp:checked ~ main #trigger-about-frontend-backend-read-more-info-container { display: grid; }
+
+
+
+
+
+/* Read More / Less - Info Container */
+.about-frontend-backend-read-more-info-container {
+
+    padding: 1em 0em;
+   
+    display: grid;
+    row-gap: 1em;
+
+    color: var(--middle-2-grey);
+
+}
+
+
+
+
+
+
+
+
+/* -------------------------------------------------------- */
+/* Content Container - Frontend & Backend 
+/* -------------------------------------------------------- */
+
+.about-frontend-backend-content-container {
+
+
+    padding-top: 1.5em;
+
+    
+    display: grid;
+    row-gap: 1em;
+
+    border-bottom: 1px solid var(--middle-2-grey);
+
+  
+}
+
+
+
+/* -------------------------------------- */
+/* Skill Box 
+* -------------------------------------- */
+
+.about-skill-box {
+
+    display: grid;
+    
+}
+
+
+.about-skill-header {
+
+    font-weight: bold;
+    color: var(--black);
+    background-color: var(--light-brown);
+
+    padding: .3em;
+    border-radius: .3em;
+}
+
+
+
+/* --------------------------------------------- */
+/* Skill sets Box                                 */
+/* --------------------------------------------- */
+.about-skill-set-items-container {
+
+    padding: 1.5em .3em;
+    display: grid;
+    row-gap: 1em;
+
+}
+
+
+.about-skill-set-item {
+
+    display: grid;
+    align-items: center;
+    column-gap: 1em;
+    grid: auto / 1.5em auto 5em;
+    
+
+}
+
+.about-skill-set-level {
+
+    background-color: var(--middle-1-grey);
+    color: var(--black);
+    padding: .1em .3em;
+    border-radius: .3em;
+    
+    text-align: center;
+}
+
+.svg-skill-set { width: 1.3em; }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ----------------------------------------------------------- */
+/* [3/5] Why i call it Masch Projects - Container              */
+/* ----------------------------------------------------------- */
+
+
+/* ---------------------------------------- */
+/* Label Why Masch Handling */
+/* ---------------------------------------- */
+
+input#chk-about-label-whymasch ,
+#trigger-whymasch-container { display: none; }
+
+input#chk-about-label-whymasch:checked ~ main #trigger-whymasch-container { display: block; }
+
+
+input#chk-about-label-whymasch:checked ~ main label[for="chk-about-label-whymasch"] > div:first-child img {
+
+    transform: rotate(180deg);
+}
+
+input#chk-about-label-whymasch:checked ~ main label[for="chk-about-label-whymasch"] { 
+
+    background-color: var(--light-brown);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ----------------------------------------------------------- */
+/* [4/6] My Personality Container                              */
+/* ----------------------------------------------------------- */
+
+#trigger-about-personality-content-container  {
+
+    padding: 1.5em 1em;
+}
+
+
+
+
+
+/* --------------------------------------------- */
+/* Who I am Container 
+/* --------------------------------------------- */
+
+#about-who-i-am-list-container {
+
+    padding-top: 1.3em;
+    padding-bottom: 2.3em;
+
+    display: grid;
+    row-gap: .8em;
+}
+
+.about-who-i-am-list-item {
+
+    display: flex;
+    align-items: center;
+    column-gap: 1em;
+}
+
+
+.svg-about-who-i-am-icon { width: 1.3em; }
+
+
+/* --------------------------------------------- */
+/* My Hobby Container 
+/* --------------------------------------------- */
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ----------------------------------------------------------- */
+/* [5/6] My Mindset Container                                  */
+/* ----------------------------------------------------------- */
+
+
+
+
+/* ----------------------------------------------------------- */
+/* [6/6] Contact Me Container                                  */
+/* ----------------------------------------------------------- */
+
+
+#contactme-container {
+
+    display: flex;
+    column-gap: 1.5em;
+}
+
+.png-contactme { width: 8.5em; border-radius: .3em; }
+
+
+#contactme-text-box {
+
+    align-self: flex-start;
+
+    display: grid;
+    row-gap: 3em;
+
+    width: 100%;
+}
+
+#contactme-title { 
+
+    width: 5.3em;
+
+    font-weight: bold;
+    background-color: var(--light-brown);
+    color: var(--black);
+    padding: .3em .6em;
+
+    border-radius: .3em;
+}
+
+
+#contactme-email {
+
+    background-color: var(--middle-1-grey);
+    color: var(--black);
+    text-decoration: none;
+
+    font-weight: bold;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: .6em;
+
+    padding: .3em 1em;
+
+    border-radius: .3em;
+
+}
+
+#contactme-email:visited { color: var(--black); }
+
+#contactme-email:hover {
+
+    transition: .3s;
+    background-color: var(--light-brown);
+}
+
+.svg-email { width: 1.4em; }
+
+
+/* ----------------------------------------------------------- */
+/* My Quote Container                                  */
+/* ----------------------------------------------------------- */
+
+
+#myquote-container {
+
+    margin-top: 1.5em;
+    padding: 1em 0em;
+
+    border-top: 1px solid var(--rainy-dark-1-grey);
+    border-bottom: 1px solid var(--rainy-dark-1-grey);
+
+    text-align: center;
+
+}
+
+#quote-text-container {
+
+    font-style: italic;
+}
+
+#quote-author { font-weight: bold; color: var(--light-brown);}

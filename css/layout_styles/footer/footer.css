@@ -1,0 +1,275 @@
+/* ---------------------------------------------------- */
+/*
+    [css-file]: footer.css
+    
+    [info]: defines all styles which will be styled
+    in our footer
+
+/* ---------------------------------------------------- */
+
+
+
+#own-footer {
+
+    /*font-size: 1.3em;*/
+    position: relative;
+   
+   
+
+    background-color: var(--moon-dark-black);
+    color:var(--light-fog-2-grey);
+
+   background: linear-gradient(to bottom, rgba(255,255,255,0.15) 0%, rgba(0,0,0,0.15) 100%), radial-gradient(at top center, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.40) 120%) #212121;
+   background-blend-mode: multiply,multiply;
+
+}
+
+#footer-content-container {
+
+    padding: 3em .8em;
+   
+}
+
+
+/* ------------------------------------------------------------ */
+/* Footer - Header 
+/* ------------------------------------------------------------ */
+
+#footer-header {
+
+    display: flex;
+    justify-content: space-between;
+
+    /*padding-bottom: 2.5em;*/
+    padding-bottom: 1em;
+
+}
+
+#footer-title { 
+
+    font-size: 1.4em;
+    font-weight: bold;
+    font-style: italic;
+}
+
+#img-svg-footer-compass { 
+    
+    width: 4.3em; 
+
+    position: absolute; 
+    top:0em;
+    right:0em;
+
+}
+
+
+
+/* ------------------------------------------------------------ */
+/* Footer - Main 
+/* ------------------------------------------------------------ */
+
+#footer-main {
+
+    padding: 4em 0em;
+
+    display: grid;
+    row-gap: 4em;
+}
+
+/* actually not used */
+.footer-line-container {
+
+    margin: 1.8em 0em;
+    width: 100%;
+    /* middle-grey-2 #929292 as opacity */
+    border-top: 2px solid rgba(146, 146, 146, .5);
+}
+
+.footer-sub-header {
+
+    color: var(--black);
+    background-color: var(--light-brown);
+    font-weight: bold;
+
+    padding: .3em .5em;
+    
+    border-radius: .3em;
+
+    display: flex;
+    align-items: center;
+
+    column-gap: .5em;
+}
+
+.footer-sub-sub-header {
+
+    color: var(--light-brown);
+    font-weight: bold;
+
+    font-style: italic;
+}
+
+.img-footer-topic {
+
+    width: 1.5em;
+    border-radius: .3em;
+}
+
+.img-footer-user {
+
+    width: 2em;
+    border-radius: .3em;
+
+}
+
+.img-footer-flag { 
+
+    width: 1.5em;
+    border-radius: .2em;
+}
+
+
+.footer-link-box {
+
+    padding: 1.5em 0em 0em .2em;
+}
+
+/* ----------------------------------- */
+/* Link Layout & Style & Effects
+/* ----------------------------------- */
+
+.footer-link-layout { 
+
+    color:var(--light-fog-2-grey);
+
+    text-decoration: none;
+    font-weight: bold;
+
+    padding: .3em .5em;
+
+    display: flex;
+    align-items: center;
+    column-gap: .6em;
+
+}
+
+.footer-link-layout:visited { color:var(--light-fog-2-grey); }
+
+.footer-link-layout:hover {
+
+    transition: .3s;
+    background-color: var(--rainy-dark-2-grey);
+    border-radius: .3em;
+}
+
+/* layout between to img */
+.footer-imgs-layout {
+
+    display: flex;
+    align-items: center;
+    column-gap: .3em;
+}
+
+/* ------------------------------------------------------------ */
+/* Social & Other - Block 
+/* ------------------------------------------------------------ */
+
+.social-other-block {
+
+    display: flex;
+    flex-wrap: wrap;
+
+    column-gap: 2em;
+    row-gap: 2.3em;
+
+}
+
+.social-other-link-layout {
+
+    padding-top: 3em;
+    display: grid;
+    row-gap: 1em;
+}
+
+.social-other-txt-link-block { 
+    
+    line-height: 1.3em;
+    color:var(--light-fog-2-grey);
+
+}
+
+.social-other-txt-link-block > div:first-child {
+
+   font-weight: bold;
+}
+.social-other-txt-link-block > div:last-child {
+
+    color: var(--middle-1-grey);
+    font-style: italic;
+
+    font-size: .9em;
+}
+    
+
+
+/* ------------------------------------------------------------ */
+/* Teaching - Block 
+/* ------------------------------------------------------------ */
+
+.teaching-content-container {
+
+    padding-top: 3.3em;
+
+    display: grid;
+    row-gap: 3em;
+}
+
+.teaching-content-box {
+
+    display: grid;
+    row-gap: .8em;
+}
+
+
+.teaching-link-box {
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    
+    column-gap: .5em;
+    row-gap: .8em;
+}
+
+/* ------------------------------------------------------------ */
+/* Footer - Copyright 
+/* ------------------------------------------------------------ */
+
+#footer-copyright {
+
+    border-top: 2px solid var(--light-brown);
+    padding-top: .5em;
+
+    margin-top: .8em;
+
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+#footer-copyright-title { 
+
+    font-weight: bold;
+    font-style: italic;
+    color: var(--light-brown);
+}
+
+
+#img-footer-me-dog {
+
+    width: 5em;
+
+    position: absolute;
+    top: -5.2em;
+    right: 1em;
+}

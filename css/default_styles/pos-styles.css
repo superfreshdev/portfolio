@@ -1,0 +1,19 @@
+/* ---------------------------------------------------- */
+/*
+    [css-file]: pos-styles.css
+    
+    [info]: defines all default positions styles 
+    which u can often use
+    
+
+
+/* ---------------------------------------------------- */
+
+
+
+
+/* ------------------------------------------- */
+/* Position: Relative 
+/* ------------------------------------------- */
+
+.pos-rel-top-0 { position: relative; top:0; }

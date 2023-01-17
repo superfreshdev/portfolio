@@ -1,0 +1,25 @@
+/* ---------------------------------------------------- */
+/*
+    [css-file]: resp-body.css
+    
+    [info]: defines all responsive handlings by 
+    font-size bigger & more
+
+/* ---------------------------------------------------- */
+
+
+
+/* --------------------------------------------------- */
+/*  >= 1680px ( Laptop / Monitor ) 
+/* --------------------------------------------------- */
+
+@media (min-width: 1680px) {
+
+    /* default font-size get bigger for better reading */
+    html, body {
+
+        font-size: 1.1rem;
+    }
+    
+}
+

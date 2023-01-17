@@ -1,0 +1,419 @@
+/* ---------------------------------------------------- */
+/*
+    [css-file]: main-card-projects.css
+    
+    [info]: defines all css radio / checkbox handlings
+    in the main projects card.
+    
+/* ---------------------------------------------------- */
+
+
+/* // Default unshown */
+
+/* ----------------------------------------------------------------------- */
+/* All Radio for Projects Card
+/* ----------------------------------------------------------------------- */
+
+/* ----------------------------------------------- */
+/* Nav - Radio - projects 
+/* ----------------------------------------------- */
+
+/* unshown default radio circle */
+input#radio-nav-topic-projects-web ,
+input#radio-nav-topic-projects-ds ,
+input#radio-nav-topic-projects-dbs , 
+input#radio-nav-topic-projects-tt ,
+input#radio-nav-topic-projects-x {
+
+    display: none;
+    
+}
+
+/* ----------------------------------------------- */
+/* Filter - Radio - Web/App-Development 
+/* ----------------------------------------------- */
+
+input#radio-filter-projects-webframeworks,
+input#radio-filter-projects-web-programming , 
+input#radio-filter-projects-html ,
+input#radio-filter-projects-webserver , 
+input#radio-filter-projects-cms {
+
+    display: none;
+}
+
+/* ----------------------------------------------- */
+/* Filter - Radio - Data Science  
+/* ----------------------------------------------- */
+
+input#radio-filter-projects-data-science-tools,
+input#radio-filter-projects-math , 
+input#radio-filter-projects-ds-programming ,
+input#radio-filter-projects-ml-ki {
+
+    display: none;
+}
+
+/* ----------------------------------------------- */
+/* Filter - Radio - Tech Tools
+/* ----------------------------------------------- */
+
+input#radio-filter-projects-tt-dev,
+input#radio-filter-projects-tt-office , 
+input#radio-filter-projects-tt-multimedia {
+
+    display: none;
+}
+
+
+
+
+
+/* ----------------------------------------------------------------------- */
+/* 4. Big Topic Container - Web/App-Development , Data Science , ... , 
+/* ----------------------------------------------------------------------- */ 
+/* ! - Default unshown because only show by open nav */
+
+#trigger-projects-web-app-development-container,
+#trigger-projects-data-science-container ,
+#trigger-projects-database-security-container,
+#trigger-projects-tech-tools-container {
+
+    display: none;
+}
+
+/* if nav setted - show topic container */
+#radio-nav-topic-projects-web:checked ~ main #trigger-projects-web-app-development-container,
+#radio-nav-topic-projects-ds:checked ~ main #trigger-projects-data-science-container , 
+#radio-nav-topic-projects-dbs:checked ~ main #trigger-projects-database-security-container ,
+#radio-nav-topic-projects-tt:checked ~ main #trigger-projects-tech-tools-container{
+
+    display: block;
+}
+
+/* unshown animated panel if one of 4 topics is setted */
+input#radio-nav-topic-projects-web:checked ~ main #trigger-nav-topic-projects-animated ,
+input#radio-nav-topic-projects-ds:checked ~ main #trigger-nav-topic-projects-animated , 
+input#radio-nav-topic-projects-dbs:checked ~ main #trigger-nav-topic-projects-animated ,
+input#radio-nav-topic-projects-tt:checked ~ main #trigger-nav-topic-projects-animated {
+
+    display: none;
+}
+
+
+
+
+/*------------------------------------------------------------------------ */
+/* Topic Projects Footer - Text Inspiration
+/*------------------------------------------------------------------------ */
+
+/* default unshown - show only by open topic container  */
+#trigger-projects-topic-footer-web-development,
+#trigger-projects-topic-footer-data-science , 
+#trigger-projects-topic-footer-database-security,
+#trigger-projects-topic-footer-tech-tools { display: none; }
+
+
+
+
+
+
+/* --------------------------------------------------------------- */
+/* Filter Topics of Web-Development 
+/* (web-frameworks,programming,html-css-css-frameworks,...)
+/* --------------------------------------------------------------- */
+
+#trigger-main-topic-projects-web-frameworks ,
+#trigger-main-topic-projects-programming ,
+#trigger-main-topic-projects-html ,
+#trigger-main-topic-projects-cloud , 
+#trigger-main-topic-projects-cms {
+
+    display: none;
+}
+
+/* if filter of topic web/app development is selected -> open content container */
+#radio-filter-projects-webframeworks:checked ~ main #trigger-main-topic-projects-web-frameworks ,
+#radio-filter-projects-web-programming:checked ~ main #trigger-main-topic-projects-programming ,
+#radio-filter-projects-html:checked ~ main #trigger-main-topic-projects-html ,
+#radio-filter-projects-webserver:checked ~ main #trigger-main-topic-projects-cloud ,
+#radio-filter-projects-cms:checked ~ main #trigger-main-topic-projects-cms {
+
+    display: grid;
+}
+
+/* if filter of topic web/app development is selected -> show projects footer */
+#radio-filter-projects-webframeworks:checked ~ main #trigger-projects-topic-footer-web-development ,
+#radio-filter-projects-web-programming:checked ~ main #trigger-projects-topic-footer-web-development ,
+#radio-filter-projects-html:checked ~ main #trigger-projects-topic-footer-web-development ,
+#radio-filter-projects-webserver:checked ~ main #trigger-projects-topic-footer-web-development ,
+#radio-filter-projects-cms:checked ~ main #trigger-projects-topic-footer-web-development {
+
+    display: block;
+}
+
+
+/* filter setted -> styling my own radio box in it */
+input#radio-filter-projects-webframeworks:checked ~ main #lbl-filter-projects-webdev-webframeworks .radio-masch-x-box ,
+input#radio-filter-projects-web-programming:checked ~ main #lbl-filter-projects-webdev-programming .radio-masch-x-box ,
+input#radio-filter-projects-html:checked ~ main #lbl-filter-projects-webdev-html .radio-masch-x-box ,
+input#radio-filter-projects-webserver:checked ~ main #lbl-filter-projects-webdev-webserver .radio-masch-x-box , 
+input#radio-filter-projects-cms:checked ~ main #lbl-filter-projects-webdev-cms .radio-masch-x-box {
+
+    display: flex;
+}
+
+
+/* --------------------------------------------------------------- */
+/* Filter Topics of Data Science 
+/* (data science & tools,math,programming,...)
+/* --------------------------------------------------------------- */
+#trigger-main-topic-projects-data-science-tools ,
+#trigger-main-topic-projects-math ,
+#trigger-main-topic-projects-ds-programming ,
+#trigger-main-topic-projects-ml-ki {
+
+    display: none;
+}
+
+
+/* if filter of topic data science is selected -> open content container */
+#radio-filter-projects-data-science-tools:checked ~ main #trigger-main-topic-projects-data-science-tools ,
+#radio-filter-projects-math:checked ~ main #trigger-main-topic-projects-math ,
+#radio-filter-projects-ds-programming:checked ~ main #trigger-main-topic-projects-ds-programming ,
+#radio-filter-projects-ml-ki:checked ~ main #trigger-main-topic-projects-ml-ki {
+
+    display: grid;
+}
+
+/* if filter of topic web/app development is selected -> show projects footer */
+#radio-filter-projects-data-science-tools:checked ~ main #trigger-projects-topic-footer-data-science ,
+#radio-filter-projects-math:checked ~ main #trigger-projects-topic-footer-data-science ,
+#radio-filter-projects-ds-programming:checked ~ main #trigger-projects-topic-footer-data-science ,
+#radio-filter-projects-ml-ki:checked ~ main #trigger-projects-topic-footer-data-science  {
+
+    display: block;
+}
+
+
+/* filter setted -> styling my own radio box in it */
+input#radio-filter-projects-data-science-tools:checked ~ main #lbl-filter-projects-data-science-tools .radio-masch-x-box ,
+input#radio-filter-projects-math:checked ~ main #lbl-filter-projects-math .radio-masch-x-box ,
+input#radio-filter-projects-ds-programming:checked ~ main #lbl-filter-projects-ds-programming .radio-masch-x-box ,
+input#radio-filter-projects-ml-ki:checked ~ main #lbl-filter-projects-ml-ki .radio-masch-x-box  {
+
+    display: flex;
+}
+
+
+
+
+
+/* --------------------------------------------------------------- */
+/* Filter Topics of Database & Security 
+/* (no filter exists)
+/* --------------------------------------------------------------- */
+/* in this topic we dont need any filter trigger because we dont 
+/* have filter for this topic */
+
+
+
+/* if filter of topic web/app development is selected -> show projects footer */
+#radio-nav-topic-projects-dbs:checked ~ main #trigger-projects-topic-footer-database-security {
+    display: block;
+}
+
+
+
+/* --------------------------------------------------------------- */
+/* Filter Topics of Tech Tools 
+/* (development,office,multimedia,...)
+/* --------------------------------------------------------------- */
+#trigger-main-topic-projects-tt-development ,
+#trigger-main-topic-projects-tt-office ,
+#trigger-main-topic-projects-tt-multimedia
+{
+
+    display: none;
+}
+
+/* if filter of topic web/app development is selected -> show projects footer */
+#radio-filter-projects-tt-dev:checked ~ main #trigger-projects-topic-footer-tech-tools ,
+#radio-filter-projects-tt-office:checked ~ main #trigger-projects-topic-footer-tech-tools ,
+#radio-filter-projects-tt-multimedia:checked ~ main #trigger-projects-topic-footer-tech-tools {
+    display: block;
+}
+
+
+/* if filter of topic data science is selected -> open content container */
+#radio-filter-projects-tt-dev:checked ~ main #trigger-main-topic-projects-tt-development ,
+#radio-filter-projects-tt-office:checked ~ main #trigger-main-topic-projects-tt-office ,
+#radio-filter-projects-tt-multimedia:checked ~ main #trigger-main-topic-projects-tt-multimedia {
+
+    display: grid;
+}
+
+/* if filter of topic data science is selected -> show projects footer */
+#radio-filter-projects-tt-dev:checked ~ main #trigger-projects-topic-footer-development ,
+#radio-filter-projects-tt-office:checked ~ main #trigger-projects-topic-footer-office ,
+#radio-filter-projects-tt-multimedia:checked ~ main #trigger-projects-topic-footer-multimedia  {
+
+    display: block;
+}
+
+
+/* filter setted -> styling my own radio box in it */
+input#radio-filter-projects-tt-dev:checked ~ main #lbl-filter-projects-tt-dev .radio-masch-x-box ,
+input#radio-filter-projects-tt-office:checked ~ main #lbl-filter-projects-tt-office .radio-masch-x-box ,
+input#radio-filter-projects-tt-multimedia:checked ~ main #lbl-filter-projects-tt-multimedia .radio-masch-x-box  {
+
+    display: flex;
+}
+
+
+/* ------------------------------------------------ */
+/* Filter File - Tech Tools 
+/* ------------------------------------------------ */
+
+
+/* ---------------------------------- */
+/* Figma 
+/* ---------------------------------- */
+
+/* radio unshown */
+input#radio-filter-file-block-projects-tt-dev-figma-web-plattforms ,
+input#radio-filter-file-block-projects-tt-dev-figma-mobile-plattforms {
+
+    display: none;
+}
+
+/* show masch box if radio is selected */
+#radio-filter-file-block-projects-tt-dev-figma-web-plattforms:checked ~ main #lbl-filter-file-projects-tt-dev-figma-web-plattforms .radio-masch-x-box ,
+#radio-filter-file-block-projects-tt-dev-figma-mobile-plattforms:checked ~ main #lbl-filter-file-projects-tt-dev-figma-mobile-plattforms .radio-masch-x-box {
+
+    display: flex;
+}
+
+/* show file item link list container if radio is checked */
+#radio-filter-file-block-projects-tt-dev-figma-web-plattforms:checked ~ main #trigger-filter-file-block-projects-tt-dev-figma-web-plattforms,
+#radio-filter-file-block-projects-tt-dev-figma-mobile-plattforms:checked  ~ main #trigger-filter-file-block-projects-tt-dev-figma-mobile-plattforms {
+
+    display: grid;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* -------------------------------------------------------------------------- */
+/* Nav projects - Styling - Handling
+/* -------------------------------------------------------------------------- */
+
+
+/* -------------------------------------------- */
+/* Navigation - Doc Handling
+/* -------------------------------------------- */
+
+/* default unshown - x, black-versions of web, ds , dbs , tt  */
+#lbl-nav-topic-projects-x > img:nth-of-type(2) ,
+#lbl-nav-topic-projects-web > img:nth-of-type(2) ,
+#lbl-nav-topic-projects-ds > img:nth-of-type(2) ,
+#lbl-nav-topic-projects-dbs > img:nth-of-type(2) ,
+#lbl-nav-topic-projects-tt > img:nth-of-type(2) {
+    
+    display: none;
+
+}
+
+/* if hower show label black versions */
+#lbl-nav-topic-projects-web:hover > img:nth-of-type(1),
+#lbl-nav-topic-projects-ds:hover > img:nth-of-type(1) ,
+#lbl-nav-topic-projects-dbs:hover > img:nth-of-type(1) ,
+#lbl-nav-topic-projects-tt:hover > img:nth-of-type(1) { 
+
+    display: none;
+}
+
+#lbl-nav-topic-projects-web:hover > img:nth-of-type(2),
+#lbl-nav-topic-projects-ds:hover > img:nth-of-type(2) ,
+#lbl-nav-topic-projects-dbs:hover > img:nth-of-type(2) ,
+#lbl-nav-topic-projects-tt:hover > img:nth-of-type(2) { 
+
+    display: block;
+}
+
+
+/* show if something checked */
+#radio-nav-topic-projects-x:checked ~ main #lbl-nav-topic-projects-x > img:nth-of-type(1) { display: flex; }
+#radio-nav-topic-projects-x:checked ~ main #lbl-nav-topic-projects-x > img:nth-of-type(2) { display: none; }
+
+
+/* -------------------------------------------------- */
+/* [Handling] - X Label 
+/* -------------------------------------------------- */
+
+/* if one of 4 topics is setted , x get red version */
+input#radio-nav-topic-projects-web:checked ~ main #lbl-nav-topic-projects-x > img:nth-of-type(1),
+input#radio-nav-topic-projects-ds:checked ~ main #lbl-nav-topic-projects-x  > img:nth-of-type(1) ,
+input#radio-nav-topic-projects-dbs:checked ~ main #lbl-nav-topic-projects-x > img:nth-of-type(1) ,
+input#radio-nav-topic-projects-tt:checked ~ main #lbl-nav-topic-projects-x > img:nth-of-type(1) {
+
+    display: none;
+}
+
+input#radio-nav-topic-projects-web:checked ~ main #lbl-nav-topic-projects-x > img:nth-of-type(2),
+input#radio-nav-topic-projects-ds:checked ~ main #lbl-nav-topic-projects-x  > img:nth-of-type(2) ,
+input#radio-nav-topic-projects-dbs:checked ~ main #lbl-nav-topic-projects-x > img:nth-of-type(2) ,
+input#radio-nav-topic-projects-tt:checked ~ main #lbl-nav-topic-projects-x > img:nth-of-type(2) {
+
+    display: block;
+}
+
+/* -------------------------------------------------- */
+/* [Handling] - Nav-Items Label 
+/* -------------------------------------------------- */
+
+
+/* By Setted Nav -> change nav-link color  */
+input#radio-nav-topic-projects-web:checked ~ main #lbl-nav-topic-projects-web ,
+input#radio-nav-topic-projects-ds:checked ~ main #lbl-nav-topic-projects-ds  ,
+input#radio-nav-topic-projects-dbs:checked ~ main #lbl-nav-topic-projects-dbs  ,
+input#radio-nav-topic-projects-tt:checked ~ main #lbl-nav-topic-projects-tt   {
+
+    background-color: var(--light-brown);
+    color: var(--black);
+}
+
+
+/* By Setted Nav -> unshown white img  */
+input#radio-nav-topic-projects-web:checked ~ main #lbl-nav-topic-projects-web > img:nth-of-type(1),
+input#radio-nav-topic-projects-ds:checked ~ main #lbl-nav-topic-projects-ds  > img:nth-of-type(1) ,
+input#radio-nav-topic-projects-dbs:checked ~ main #lbl-nav-topic-projects-dbs > img:nth-of-type(1) ,
+input#radio-nav-topic-projects-tt:checked ~ main #lbl-nav-topic-projects-tt > img:nth-of-type(1) {
+
+    display: none;
+}
+
+/* by Setted Nav -> show black img */
+input#radio-nav-topic-projects-web:checked ~ main #lbl-nav-topic-projects-web > img:nth-of-type(2),
+input#radio-nav-topic-projects-ds:checked ~ main #lbl-nav-topic-projects-ds  > img:nth-of-type(2) ,
+input#radio-nav-topic-projects-dbs:checked ~ main #lbl-nav-topic-projects-dbs > img:nth-of-type(2) ,
+input#radio-nav-topic-projects-tt:checked ~ main #lbl-nav-topic-projects-tt > img:nth-of-type(2) {
+
+    display: block;
+}
+
+
+
+

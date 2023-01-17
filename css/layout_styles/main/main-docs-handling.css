@@ -1,0 +1,442 @@
+/* ---------------------------------------------------- */
+/*
+    [css-file]: main-card-docs.css
+    
+    [info]: defines all css radio / checkbox handlings
+    in the main docs card.
+    
+/* ---------------------------------------------------- */
+
+
+/* // Default unshown */
+
+/* ----------------------------------------------------------------------- */
+/* All Radio for Docs Card
+/* ----------------------------------------------------------------------- */
+
+/* ----------------------------------------------- */
+/* Nav - Radio - Docs 
+/* ----------------------------------------------- */
+
+/* unshown default radio circle */
+input#radio-nav-topic-docs-web ,
+input#radio-nav-topic-docs-ds ,
+input#radio-nav-topic-docs-dbs , 
+input#radio-nav-topic-docs-tt ,
+input#radio-nav-topic-docs-x {
+
+    display: none;
+    
+}
+
+/* ----------------------------------------------- */
+/* Filter - Radio - Web/App-Development 
+/* ----------------------------------------------- */
+
+input#radio-filter-docs-webframeworks,
+input#radio-filter-docs-web-programming , 
+input#radio-filter-docs-html ,
+input#radio-filter-docs-webserver , 
+input#radio-filter-docs-cms {
+
+    display: none;
+}
+
+/* ----------------------------------------------- */
+/* Filter - Radio - Data Science  
+/* ----------------------------------------------- */
+
+input#radio-filter-docs-data-science-tools,
+input#radio-filter-docs-math , 
+input#radio-filter-docs-ds-programming ,
+input#radio-filter-docs-ml-ki {
+
+    display: none;
+}
+
+/* ----------------------------------------------- */
+/* Filter - Radio - Tech Tools
+/* ----------------------------------------------- */
+
+input#radio-filter-docs-tt-dev,
+input#radio-filter-docs-tt-office , 
+input#radio-filter-docs-tt-multimedia {
+
+    display: none;
+}
+
+
+
+
+
+/* ----------------------------------------------------------------------- */
+/* 4. Big Topic Container - Web/App-Development , Data Science , ... , 
+/* ----------------------------------------------------------------------- */ 
+/* ! - Default unshown because only show by open nav */
+
+#trigger-docs-web-app-development-container,
+#trigger-docs-data-science-container ,
+#trigger-docs-database-security-container,
+#trigger-docs-tech-tools-container {
+
+    display: none;
+}
+
+/* if nav setted - show topic container */
+#radio-nav-topic-docs-web:checked ~ main #trigger-docs-web-app-development-container,
+#radio-nav-topic-docs-ds:checked ~ main #trigger-docs-data-science-container , 
+#radio-nav-topic-docs-dbs:checked ~ main #trigger-docs-database-security-container ,
+#radio-nav-topic-docs-tt:checked ~ main #trigger-docs-tech-tools-container{
+
+    display: block;
+}
+
+/* unshown animated panel if one of 4 topics is setted */
+input#radio-nav-topic-docs-web:checked ~ main #trigger-nav-topic-docs-animated ,
+input#radio-nav-topic-docs-ds:checked ~ main #trigger-nav-topic-docs-animated , 
+input#radio-nav-topic-docs-dbs:checked ~ main #trigger-nav-topic-docs-animated ,
+input#radio-nav-topic-docs-tt:checked ~ main #trigger-nav-topic-docs-animated {
+
+    display: none;
+}
+
+
+
+
+/*------------------------------------------------------------------------ */
+/*  Topic Docs Footer - Text Inspiration
+/*------------------------------------------------------------------------ */
+
+/* Web-App-Development , Data Science , DB&S , TT */
+#trigger-docs-topic-footer-web-app-development ,
+#trigger-docs-topic-footer-data-science , 
+#trigger-docs-topic-footer-database-security , 
+#trigger-docs-topic-footer-tech-tools {
+
+     display: none;
+}
+
+
+
+
+
+
+/* --------------------------------------------------------------- */
+/* Filter Topics of Web-Development 
+/* (web-frameworks,programming,html-css-css-frameworks,...)
+/* --------------------------------------------------------------- */
+
+#trigger-main-topic-docs-web-frameworks ,
+#trigger-main-topic-docs-programming ,
+#trigger-main-topic-docs-html ,
+#trigger-main-topic-docs-cloud , 
+#trigger-main-topic-docs-cms {
+
+    display: none;
+}
+
+/* if filter of topic web/app development is selected -> open content container */
+#radio-filter-docs-webframeworks:checked ~ main #trigger-main-topic-docs-web-frameworks ,
+#radio-filter-docs-web-programming:checked ~ main #trigger-main-topic-docs-programming ,
+#radio-filter-docs-html:checked ~ main #trigger-main-topic-docs-html ,
+#radio-filter-docs-webserver:checked ~ main #trigger-main-topic-docs-cloud ,
+#radio-filter-docs-cms:checked ~ main #trigger-main-topic-docs-cms {
+
+    display: grid;
+}
+
+/* if filter of topic web/app development is selected -> show docs footer */
+#radio-filter-docs-webframeworks:checked ~ main #trigger-docs-topic-footer-web-app-development ,
+#radio-filter-docs-web-programming:checked ~ main #trigger-docs-topic-footer-web-app-development ,
+#radio-filter-docs-html:checked ~ main #trigger-docs-topic-footer-web-app-development ,
+#radio-filter-docs-webserver:checked ~ main #trigger-docs-topic-footer-web-app-development ,
+#radio-filter-docs-cms:checked ~ main #trigger-docs-topic-footer-web-app-development {
+
+    display: block;
+}
+
+
+/* filter setted -> styling my own radio box in it */
+input#radio-filter-docs-webframeworks:checked ~ main #lbl-filter-docs-webdev-webframeworks .radio-masch-x-box ,
+input#radio-filter-docs-web-programming:checked ~ main #lbl-filter-docs-webdev-programming .radio-masch-x-box ,
+input#radio-filter-docs-html:checked ~ main #lbl-filter-docs-webdev-html .radio-masch-x-box ,
+input#radio-filter-docs-webserver:checked ~ main #lbl-filter-docs-webdev-webserver .radio-masch-x-box , 
+input#radio-filter-docs-cms:checked ~ main #lbl-filter-docs-webdev-cms .radio-masch-x-box {
+
+    display: flex;
+}
+
+
+/* --------------------------------------------------------------- */
+/* Filter Topics of Data Science 
+/* (data science & tools,math,programming,...)
+/* --------------------------------------------------------------- */
+#trigger-main-topic-docs-data-science-tools ,
+#trigger-main-topic-docs-math ,
+#trigger-main-topic-docs-ds-programming ,
+#trigger-main-topic-docs-ml-ki {
+
+    display: none;
+}
+
+
+/* if filter of topic data science is selected -> open content container */
+#radio-filter-docs-data-science-tools:checked ~ main #trigger-main-topic-docs-data-science-tools ,
+#radio-filter-docs-math:checked ~ main #trigger-main-topic-docs-math ,
+#radio-filter-docs-ds-programming:checked ~ main #trigger-main-topic-docs-ds-programming ,
+#radio-filter-docs-ml-ki:checked ~ main #trigger-main-topic-docs-ml-ki {
+
+    display: grid;
+}
+
+/* if filter of topic data science is selected -> show docs footer */
+#radio-filter-docs-data-science-tools:checked ~ main #trigger-docs-topic-footer-data-science ,
+#radio-filter-docs-math:checked ~ main #trigger-docs-topic-footer-data-science ,
+#radio-filter-docs-ds-programming:checked ~ main #trigger-docs-topic-footer-data-science ,
+#radio-filter-docs-ml-ki:checked ~ main #trigger-docs-topic-footer-data-science {
+
+    display: block;
+}
+
+/* if filter of topic data science is selected -> show docs footer */
+#radio-filter-docs-data-science-tools:checked ~ main #trigger-docs-topic-footer ,
+#radio-filter-docs-math:checked ~ main #trigger-docs-topic-footer ,
+#radio-filter-docs-ds-programming:checked ~ main #trigger-docs-topic-footer ,
+#radio-filter-docs-ml-ki:checked ~ main #trigger-docs-topic-footer  {
+
+    display: block;
+}
+
+/* filter setted -> styling my own radio box in it */
+input#radio-filter-docs-data-science-tools:checked ~ main #lbl-doc-filter-ds-dstools .radio-masch-x-box ,
+input#radio-filter-docs-math:checked ~ main #lbl-doc-filter-ds-math .radio-masch-x-box ,
+input#radio-filter-docs-ds-programming:checked ~ main #lbl-filter-doc-ds-programming .radio-masch-x-box ,
+input#radio-filter-docs-ml-ki:checked ~ main #lbl-filter-doc-ds-mlai .radio-masch-x-box  {
+
+    display: flex;
+}
+
+
+
+
+
+/* --------------------------------------------------------------- */
+/* Filter Topics of Database & Security 
+/* (no filter exists)
+/* --------------------------------------------------------------- */
+/* in this topic we dont need any filter trigger because we dont 
+/* have filter for this topic */
+
+
+/* if filter of topic web/app development is selected -> show docs footer */
+input#radio-nav-topic-docs-dbs:checked ~ main #trigger-docs-topic-footer-database-security {
+
+    display: block;
+}
+
+
+
+
+/* --------------------------------------------------------------- */
+/* Filter Topics of Tech Tools 
+/* (development,office,multimedia,...)
+/* --------------------------------------------------------------- */
+#trigger-main-topic-docs-tt-development ,
+#trigger-main-topic-docs-tt-office ,
+#trigger-main-topic-docs-tt-multimedia
+{
+
+    display: none;
+}
+
+
+/* if filter of topic data science is selected -> open content container */
+#radio-filter-docs-tt-dev:checked ~ main #trigger-main-topic-docs-tt-development ,
+#radio-filter-docs-tt-office:checked ~ main #trigger-main-topic-docs-tt-office ,
+#radio-filter-docs-tt-multimedia:checked ~ main #trigger-main-topic-docs-tt-multimedia {
+
+    display: grid;
+}
+
+/* if filter of topic web/app development is selected -> show docs footer */
+#radio-filter-docs-development:checked ~ main #trigger-docs-topic-footer-tech-tools ,
+#radio-filter-docs-math:checked ~ main #trigger-docs-topic-footer-tech-tools ,
+#radio-filter-docs-multimedia:checked ~ main #trigger-docs-topic-footer-tech-tools {
+
+    display: block;
+}
+
+/* if filter of topic data science is selected -> show docs footer */
+#radio-filter-docs-tt-dev:checked ~ main #trigger-docs-topic-footer ,
+#radio-filter-docs-tt-office:checked ~ main #trigger-docs-topic-footer ,
+#radio-filter-docs-tt-multimedia:checked ~ main #trigger-docs-topic-footer  {
+
+    display: block;
+}
+
+
+/* filter setted -> styling my own radio box in it */
+input#radio-filter-docs-tt-dev:checked ~ main #lbl-filter-doc-tt-dev .radio-masch-x-box ,
+input#radio-filter-docs-tt-office:checked ~ main #lbl-filter-doc-tt-office .radio-masch-x-box ,
+input#radio-filter-docs-tt-multimedia:checked ~ main #lbl-filter-doc-tt-multimedia .radio-masch-x-box  {
+
+    display: flex;
+}
+
+
+/* ------------------------------------------------ */
+/* Filter File - Tech Tools 
+/* ------------------------------------------------ */
+
+
+/* ---------------------------------- */
+/* Gimp
+/* ---------------------------------- */
+
+/* radio unshown */
+input#radio-filter-file-block-docs-tt-dev-gimp-thumbmail ,
+input#radio-filter-file-block-docs-tt-dev-gimp-ueberlegung {
+
+    display: none;
+}
+
+/* show masch box if radio is selected */
+#radio-filter-file-block-docs-tt-dev-gimp-thumbmail:checked ~ main #lbl-filter-file-block-docs-tt-dev-gimp-thumbmail .radio-masch-x-box ,
+#radio-filter-file-block-docs-tt-dev-gimp-ueberlegung:checked ~ main #lbl-filter-file-block-docs-tt-dev-gimp-ueberlegung .radio-masch-x-box {
+
+    display: flex;
+}
+
+/* show file item link list container if radio is checked */
+#radio-filter-file-block-docs-tt-dev-gimp-thumbmail:checked ~ main #trigger-filter-file-block-docs-tt-dev-gimp-thumbmail,
+#radio-filter-file-block-docs-tt-dev-gimp-ueberlegung:checked  ~ main #trigger-filter-file-block-docs-tt-dev-gimp-ueberlegung {
+
+    display: grid;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* -------------------------------------------------------------------------- */
+/* Nav Docs - Styling - Handling
+/* -------------------------------------------------------------------------- */
+
+
+/* -------------------------------------------- */
+/* Navigation - Doc Handling
+/* -------------------------------------------- */
+
+/* default unshown - x, black-versions of web, ds , dbs , tt  */
+#lbl-nav-topic-docs-x > img:nth-of-type(2) ,
+#lbl-nav-topic-docs-web > img:nth-of-type(2) ,
+#lbl-nav-topic-docs-ds > img:nth-of-type(2) ,
+#lbl-nav-topic-docs-dbs > img:nth-of-type(2) ,
+#lbl-nav-topic-docs-tt > img:nth-of-type(2) {
+    
+    display: none;
+
+}
+
+/* if hower show label black versions */
+#lbl-nav-topic-docs-web:hover > img:nth-of-type(1),
+#lbl-nav-topic-docs-ds:hover > img:nth-of-type(1) ,
+#lbl-nav-topic-docs-dbs:hover > img:nth-of-type(1) ,
+#lbl-nav-topic-docs-tt:hover > img:nth-of-type(1) { 
+
+    display: none;
+}
+
+#lbl-nav-topic-docs-web:hover > img:nth-of-type(2),
+#lbl-nav-topic-docs-ds:hover > img:nth-of-type(2) ,
+#lbl-nav-topic-docs-dbs:hover > img:nth-of-type(2) ,
+#lbl-nav-topic-docs-tt:hover > img:nth-of-type(2) { 
+
+    display: block;
+}
+
+
+/* show if something checked */
+#radio-nav-topic-docs-x:checked ~ main #lbl-nav-topic-docs-x > img:nth-of-type(1) { display: flex; }
+#radio-nav-topic-docs-x:checked ~ main #lbl-nav-topic-docs-x > img:nth-of-type(2) { display: none; }
+
+
+
+/* -------------------------------------------------- */
+/* [Handling] - X Label 
+/* -------------------------------------------------- */
+
+/* if one of 4 topics is setted , x get red version */
+input#radio-nav-topic-docs-web:checked ~ main #lbl-nav-topic-docs-x > img:nth-of-type(1),
+input#radio-nav-topic-docs-ds:checked ~ main #lbl-nav-topic-docs-x  > img:nth-of-type(1) ,
+input#radio-nav-topic-docs-dbs:checked ~ main #lbl-nav-topic-docs-x > img:nth-of-type(1) ,
+input#radio-nav-topic-docs-tt:checked ~ main #lbl-nav-topic-docs-x > img:nth-of-type(1) {
+
+    display: none;
+}
+
+input#radio-nav-topic-docs-web:checked ~ main #lbl-nav-topic-docs-x > img:nth-of-type(2),
+input#radio-nav-topic-docs-ds:checked ~ main #lbl-nav-topic-docs-x  > img:nth-of-type(2) ,
+input#radio-nav-topic-docs-dbs:checked ~ main #lbl-nav-topic-docs-x > img:nth-of-type(2) ,
+input#radio-nav-topic-docs-tt:checked ~ main #lbl-nav-topic-docs-x > img:nth-of-type(2) {
+
+    display: block;
+}
+
+/* -------------------------------------------------- */
+/* [Handling] - Nav-Items Label 
+/* -------------------------------------------------- */
+
+
+/* By Setted Nav -> change nav-link color  */
+input#radio-nav-topic-docs-web:checked ~ main #lbl-nav-topic-docs-web ,
+input#radio-nav-topic-docs-ds:checked ~ main #lbl-nav-topic-docs-ds  ,
+input#radio-nav-topic-docs-dbs:checked ~ main #lbl-nav-topic-docs-dbs  ,
+input#radio-nav-topic-docs-tt:checked ~ main #lbl-nav-topic-docs-tt   {
+
+    background-color: var(--light-brown);
+    color: var(--black);
+}
+
+
+/* By Setted Nav -> unshown white img  */
+input#radio-nav-topic-docs-web:checked ~ main #lbl-nav-topic-docs-web > img:nth-of-type(1),
+input#radio-nav-topic-docs-ds:checked ~ main #lbl-nav-topic-docs-ds  > img:nth-of-type(1) ,
+input#radio-nav-topic-docs-dbs:checked ~ main #lbl-nav-topic-docs-dbs > img:nth-of-type(1) ,
+input#radio-nav-topic-docs-tt:checked ~ main #lbl-nav-topic-docs-tt > img:nth-of-type(1) {
+
+    display: none;
+}
+
+/* by Setted Nav -> show black img */
+input#radio-nav-topic-docs-web:checked ~ main #lbl-nav-topic-docs-web > img:nth-of-type(2),
+input#radio-nav-topic-docs-ds:checked ~ main #lbl-nav-topic-docs-ds  > img:nth-of-type(2) ,
+input#radio-nav-topic-docs-dbs:checked ~ main #lbl-nav-topic-docs-dbs > img:nth-of-type(2) ,
+input#radio-nav-topic-docs-tt:checked ~ main #lbl-nav-topic-docs-tt > img:nth-of-type(2) {
+
+    display: block;
+}
+
+
+
+

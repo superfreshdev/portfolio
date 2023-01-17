@@ -1,0 +1,140 @@
+
+/* ---------------------------------------------------- */
+/*
+    [css-file]: resp-main.css
+    
+    [info]: describe all resp handling on layout element
+    in the main part
+
+/* ---------------------------------------------------- */
+
+
+
+/* --------------------------------------------------- */
+/*  >= 530px 
+/* --------------------------------------------------- */
+@media (min-width: 530px) {
+
+  /* project img cover height auto */
+  .img-project-cover { height: 7.5em; }
+
+}
+
+
+
+
+
+/* --------------------------------------------------- */
+/*  >= 680px 
+/* --------------------------------------------------- */
+@media (min-width: 680px) {
+
+  /* first article little bit lower from head because
+  /* our header get smaller */
+  
+  #first-main-article { padding-top: 8.5em;  }
+
+  #first-main-article ,
+  .main-article  {  
+    
+    padding-left: 1em;
+    padding-right: 1em;
+
+}
+
+    
+ 
+
+}
+
+
+/* --------------------------------------------------- */
+/*  >= 820px 
+/* --------------------------------------------------- */
+@media (min-width: 820px) {
+
+
+  .m-a-c-topic-content-layout {
+
+    display: grid;
+    grid: auto / 1fr 1fr;
+
+  }
+
+}
+
+
+
+/* --------------------------------------------------- */
+/*  >= 880px 
+/* --------------------------------------------------- */
+@media (min-width: 880px) {
+
+  /* show img of card */
+  #img-docs-me-with-books,
+  #img-projects-me-with-doing,
+  #js-date { display: block; }
+
+  /* bigger sizes by content header info */
+  .m-a-c-header-content-container {  padding: 1em; }
+    
+  .m-a-c-header-info-content {
+
+    column-gap: 1.5em;
+    
+  }
+
+  .m-a-c-header-info-box { column-gap: 1em; }
+    
+  .img-header-info { width: 1.8em; }
+
+  .img-project-cover { height: auto;}
+
+  #sub-title-about-desktop-version { display: block; }
+  #sub-title-about-mobile-version { display: none;}
+   
+   
+  
+
+}
+
+
+
+/* --------------------------------------------------- */
+/*  >= 1280px 
+/* --------------------------------------------------- */
+@media (min-width: 1280px) {
+
+  /* unshown small sub description */
+  .trigger-main-article-numberblock { display: block;}
+
+  /* show about video  */
+  #about > video { display: block; }
+}
+
+
+/* --------------------------------------------------- */
+/*  >= 1680px 
+/* --------------------------------------------------- */
+@media (min-width: 1280px) {
+
+  /* docs img little bit bigger */
+  .img-doc-cover {  width: 5.8em; }
+}
+
+
+
+/* --------------------------------------------------- */
+/*  >= 1920px 
+/* --------------------------------------------------- */
+@media (min-width: 1920px) {
+
+  /* first article little bit lower from head because
+  /* our header get smaller */
+  #first-main-article {
+
+    padding-top: 9.5em;
+    
+  }
+
+}

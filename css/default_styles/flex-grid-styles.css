@@ -1,0 +1,104 @@
+/* ---------------------------------------------------- */
+/*
+    [css-file]: flex-grid-styles.css
+    
+    [info]: defines all flex , grid postion styles
+    which will be often used.
+    
+    This styles will be used for fixed styling arts.
+
+/* ---------------------------------------------------- */
+
+
+
+
+/* ------------------------------------------------------- */
+/* Flex & Grid Styles 
+/* ------------------------------------------------------- */
+
+
+/* ---------------------------------------------- */
+/* Column Gap & Row Gap 
+/* ---------------------------------------------- */
+
+
+/* Only - column gap */
+.cg-0-3em { column-gap: .3em; }
+.cg-0-5em { column-gap: .5em; }
+.cg-0-8em { column-gap: .8em; }
+.cg-1em { column-gap: 1em; }
+.cg-1-3em { column-gap: 1.3em; }
+.cg-1-5em { column-gap: 1.5em; }
+
+/* Only -  row gap */
+.rg-0-5em { row-gap: .5em; }
+.rg-0-8em { row-gap: .8em; }
+.rg-1em { row-gap: 1em; }
+
+/* Both - column & row gap */
+.cg-rg-0-5em { column-gap: .5em; row-gap: .5em; }
+.cg-rg-1em { column-gap: 1em; row-gap: 1em; }
+.cg-rg-1-5em { column-gap: 1.5em; row-gap: 1.5em; }
+
+
+/* ---------------------------------------------- */
+/* Align Content , Justify Content 
+/* Align Items , Justify Items 
+/* ---------------------------------------------- */
+
+/* Align Content */ 
+.acc { align-content: center; }
+.acfs { align-content: flex-start; }
+.acfe { align-content: flex-end; }
+
+/* Align Items */
+.aic { align-items: center; }
+.aifs { align-items: flex-start; }
+.aife { align-items: flex-end; }
+
+
+/* Justify Content */
+.jcc { justify-content: center; }
+.jcfs { justify-content: flex-start; }
+.jcfe { justify-content: flex-end; }
+
+.jcsb { justify-content: space-between; }
+.jcsa { justify-content: space-around; }
+.jcse { justify-content: space-evenly; }
+
+/* Justify Items */
+.jic { justify-items: center; }
+.jifs { justify-items: flex-start; }
+.jife { justify-items: flex-end; }
+
+
+
+/* Flex Directions */
+
+.fd-rr { flex-direction: row-reverse; }
+.fd-cr { flex-direction: column-reverse; }
+
+
+
+
+
+
+
+
+/* ------------------------------------------------------- */
+/* Flex Layouts 
+/* ------------------------------------------------------- */
+
+.flex { display: flex; }
+.iflex { display: inline-flex; }
+
+
+
+
+
+/* ------------------------------------------------------- */
+/* Grid Layouts 
+/* ------------------------------------------------------- */
+
+
+.grid { display: grid; }

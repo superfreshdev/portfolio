@@ -1,0 +1,116 @@
+/* ---------------------------------------------------- */
+/*
+    [css-file]: element-styles.css
+    
+    [info]: defines all element styles which u will
+    use in the project 
+
+/* ---------------------------------------------------- */
+
+
+
+
+/* ---------------------------------------------------- */
+/* Line Styles 
+/* ---------------------------------------------------- */
+
+
+/* line for footer,main,header */
+.line-container {
+
+    height: .3em;
+    background-color: var(--light-brown);
+}
+
+.main-topic-filter-line-marg-0-3em {
+
+    margin: 1em 0em;
+
+    height: .1em;
+    background-color: var(--light-brown);
+}
+
+.main-topic-filter-line {
+
+    height: .1em;
+    background-color: var(--light-brown);
+}
+
+
+
+
+/* ---------------------------------------------------- */
+/* Border Radius
+/* ---------------------------------------------------- */
+
+
+/* -------------------------------- */
+/* all corners 
+/* -------------------------------- */
+
+.br-0-3em { border-radius: .3em; }
+.br-0-5em { border-radius: .5em; }
+.br-0-8em { border-radius: .8em; }
+
+
+/* -------------------------------- */
+/* [1x] - top - left  
+/* -------------------------------- */
+
+.br-t-l-0-3em { border-top-left-radius: .3em;}
+.br-t-l-0-5em { border-top-left-radius: .5em;}
+
+/* -------------------------------- */
+/* [1x] - top - right  
+/* -------------------------------- */
+
+.br-t-r-0-3em { border-top-right-radius: .3em;}
+.br-t-r-0-5em { border-top-right-radius: .5em;}
+
+/* -------------------------------- */
+/* [1x] -  bottom - left  
+/* -------------------------------- */
+
+.br-b-l-0-3em { border-bottom-left-radius: .3em;}
+.br-b-l-0-5em { border-bottom-left-radius: .5em;}
+
+/* -------------------------------- */
+/*  [1x] - bottom - right  
+/* -------------------------------- */
+
+.br-b-r-0-3em { border-bottom-right-radius: .3em;}
+.br-b-r-0-5em { border-bottom-right-radius: .5em;}
+
+
+
+
+/* ---------------------------------------------------- */
+/* 2 - Borders  
+/* ---------------------------------------------------- */
+
+
+
+/* -------------------------------- */
+/* [2x] - top - left, right - corners 
+/* -------------------------------- */
+
+.br-t-lr-0-3em { border-top-left-radius: .3em; border-top-right-radius: .3em;}
+.br-t-lr-0-5em { border-top-left-radius: .5em; border-top-right-radius: .5em;}
+
+/* -------------------------------- */
+/* bottom - left, right - corners 
+/* -------------------------------- */
+
+.br-b-lr-0-3em { border-bottom-left-radius: .3em; border-bottom-right-radius: .3em;}
+.br-b-lr-0-5em { border-bottom-left-radius: .5em; border-bottom-right-radius: .5em;}
+
+
+/* ---------------------------------------------------- */
+/* 3 - Borders  
+/* ---------------------------------------------------- */
+
+/* ------------------------------------------ */
+/* Top-Right , Bottom-Right , Bottom-Left
+/* ------------------------------------------ */
+
+.br-t-l-b-rl-0-3em { border-radius: 0em .3em .3em .3em; }

@@ -1,0 +1,20 @@
+/* ---------------------------------------------------- */
+/*
+    [css-file]: font-style.css
+    
+    [info]: defines only text styling which will be 
+    often used
+    
+
+/* ---------------------------------------------------- */
+
+
+.txt-b { font-weight: bold; }
+.txt-u { text-decoration: underline; }
+.txt-i { font-style: italic; }
+
+.txt-marker { font-weight: bold; color: var(--light-brown); }
+
+.txt-marker-important {  font-weight: bold; color: var(--light-brown); }
+
+.txt-light-marker { color: var(--light-brown)  }

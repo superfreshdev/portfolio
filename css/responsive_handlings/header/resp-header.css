@@ -1,0 +1,47 @@
+/* ---------------------------------------------------- */
+/*
+    [css-file]: resp-header.css
+    
+    [info]: defines all responsive handlings by 
+    sizing the screen
+
+/* ---------------------------------------------------- */
+
+
+
+/* --------------------------------------------------- */
+/*  >= 680px 
+/* 
+/* - change mobile layout to monitor layout 
+/* --------------------------------------------------- */
+@media (min-width: 680px) {
+
+    /* Change Header Container Layout */
+    #header-container {
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+
+
+/* --------------------------------------------------- */
+/*  >= 1680px ( 23 Zoll & bigger ) 
+/* 
+/* - get sizes of header little bit bigger 
+/* --------------------------------------------------- */
+
+@media (min-width: 1680px) {
+
+
+    .png-header-me { width: 3.3em; }
+
+    a.a-header-nav-link {
+
+        padding: .5em .5em;
+    }
+
+    .svg-a-header-nav-link { height: 1em; }
+}
+

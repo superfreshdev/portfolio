@@ -1,0 +1,208 @@
+/* ---------------------------------------------------- */
+/*
+    [css-file]: header.css
+    
+    [info]: defines all styles which will be styled
+    in our header 
+
+/* ---------------------------------------------------- */
+
+
+/* ---------------------------------------------------- */
+/* Default 
+/* ---------------------------------------------------- */
+
+
+#own-header {
+
+    background-color: var(--moon-dark-black);
+    color: var(--white);
+
+    position: fixed;
+    left:0;
+    right:0;
+
+    z-index: 99;
+  
+}
+
+
+
+/* ---------------------------------------------------------------- */
+/* Header Main Container 
+/* ---------------------------------------------------------------- */
+
+#header-container {
+
+    width: 100%;
+
+    padding-top: 1em; 
+    padding-bottom: 1em;
+
+    display: grid;
+    justify-content: center;
+
+    row-gap: .8em;
+}
+
+
+/* ---------------------------------------------------- */
+/* Title Area
+/* ---------------------------------------------------- */
+
+#header-title-area {
+
+    display: flex;
+    align-items: center;
+    column-gap: .8em;
+
+}
+
+
+/* --------------------------------------- */
+/* Header Title Img Container 
+/* --------------------------------------- */
+
+#header-title-img-container {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#header-title-img-container > img:nth-of-type(2) { display: none; }
+
+#header-title-img-container:hover > img:nth-of-type(1) { display: none; }
+#header-title-img-container:hover > img:nth-of-type(2) { display: block; }
+
+.png-header-me {
+
+    width: 3em;
+    border-radius: .3em;
+}
+
+
+/* --------------------------------------- */
+/* Header Title Text Container 
+/* --------------------------------------- */
+
+#header-title-text-container {
+
+    line-height: 1.3em;
+    font-style: italic;
+}
+
+#header-title-text-container > div:first-child {
+
+    font-weight: bold;
+    font-size: 1.2em;
+    
+}
+
+#header-title-text-container > div:last-child {
+
+    color: var(--light-brown);
+}
+
+
+/* ---------------------------------------------------- */
+/* Nav Link Area
+/* ---------------------------------------------------- */
+
+#header-nav-link-area {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    column-gap: .3em;
+    
+
+}
+
+
+/* ----------------------------------- */
+/* Link Style 
+/* ----------------------------------- */
+
+a.a-header-nav-link {
+
+    display: flex;
+    align-items: center;
+    column-gap: .4em;
+
+    font-weight: bold;
+
+    padding: .1em .5em;
+
+    border-radius: .3em;
+    border:1px solid var(--light-brown);
+
+    color: var(--white);
+    text-decoration: none;
+  
+}
+
+a.a-header-nav-link:visited { color: var(--white);}
+
+.svg-a-header-nav-link { height: .8em; }
+
+/* default black icon unshown */
+a[href="#docs"] > img:nth-of-type(2),
+a[href="#projects"] > img:nth-of-type(2),
+a[href="#about"] > img:nth-of-type(2) { 
+
+    display: none;
+}
+
+
+/* ------------------------------------ */
+/* Hover - Handling 
+/* ------------------------------------ */
+
+
+a[href="#docs"]:hover, 
+a[href="#projects"]:hover,
+a[href="#about"]:hover {
+
+    background-color: var(--light-brown);
+    color:var(--black);
+
+}
+
+/* unshown white icon */
+a[href="#docs"]:hover > img:nth-of-type(1) ,
+a[href="#projects"]:hover > img:nth-of-type(1),
+a[href="#about"]:hover > img:nth-of-type(1) {
+
+    display: none;
+   
+}
+
+/* show black icon */
+a[href="#docs"]:hover > img:nth-of-type(2) ,
+a[href="#projects"]:hover > img:nth-of-type(2),
+a[href="#about"]:hover > img:nth-of-type(2) {
+
+    display: block;
+   
+}
+
+/* ------------------------------------ */
+/* Active Link - like Hover 
+/* ------------------------------------ */
+
+#header-nav-active {
+
+    background-color: var(--light-brown);
+    color:var(--black);
+
+}
+
+#header-nav-active > img:nth-of-type(1) { display: none; }
+#header-nav-active > img:nth-of-type(2) { display: block; }
+
+
+
+
+

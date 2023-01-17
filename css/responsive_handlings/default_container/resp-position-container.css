@@ -1,0 +1,269 @@
+/* ---------------------------------------------------- */
+/*
+    [css-file]: resp-container.css
+    
+    [info]: defines all responsive handlings by 
+    sizing the screen for content container
+
+/* ---------------------------------------------------- */
+
+
+
+/* ----------------------------------------------- */
+/* Default Responsive Container 
+/* ----------------------------------------------- */
+
+.resp-position-content-container {
+
+    /* just for testing , change padding to margin */
+    /* margin: 0px .5em; padding: 0px .5em;*/
+    padding: 0px 2vw;
+
+    display: flex;
+    justify-content: center;
+
+}
+
+/* ---------------------------------------------------- */
+/* >= 380px ( Mobile )
+/* ---------------------------------------------------- */
+@media (min-width: 380px) {
+
+    .resp-position-content-container {
+
+        /* margin: 0px .5em; */
+        /*background-color: blue;*/
+        padding: 0px 4vw;        
+    }
+
+
+}
+
+
+/* ---------------------------------------------------- */
+/* >= 480px ( Mobile )
+/* ---------------------------------------------------- */
+@media (min-width: 480px) {
+
+    .resp-position-content-container {
+
+        /* margin: 0px .5em; */
+        /*background-color: blue;*/
+        padding: 0px 6vw;        
+    }
+
+
+}
+
+
+
+/* ---------------------------------------------------- */
+/* >= 680px ( Mobile )
+/* ---------------------------------------------------- */
+@media (min-width: 680px) {
+
+    .resp-position-content-container {
+
+        /* margin: 0px .5em; */
+        /*background-color: blue;*/
+        padding: 0px 7vw;        
+    }
+
+}
+
+
+/* ---------------------------------------------------- */
+/* >= 780px ( Mobile )
+/* ---------------------------------------------------- */
+@media (min-width: 780px) {
+
+    .resp-position-content-container {
+
+        /* margin: 0px .5em; */
+        /*background-color: blue;*/
+        padding: 0px 10vw;        
+    }
+
+}
+
+
+/* ---------------------------------------------------- */
+/* >= 880px ( Mobile )
+/* ---------------------------------------------------- */
+@media (min-width: 880px) {
+
+    .resp-position-content-container {
+
+        /* margin: 0px .5em; */
+        /*background-color: blue;*/
+        padding: 0px 13vw;        
+    }
+
+
+}
+
+
+/* ---------------------------------------------------- */
+/* >= 1080px ( Mobile / Tablet )
+/* ---------------------------------------------------- */
+@media (min-width: 1080px) {
+
+    .resp-position-content-container {
+
+        /* margin: 0px .5em; */
+        /*background-color: blue;*/
+        padding: 0px 18vw;        
+    }
+
+
+}
+
+/* ---------------------------------------------------- */
+/* >= 1180px ( Mobile / Tablet / Laptop )
+/* ---------------------------------------------------- */
+@media (min-width: 1180px) {
+
+    .resp-position-content-container {
+
+        /* margin: 0px .5em; */
+        /*background-color: blue;*/
+        padding: 0px 20vw;        
+    }
+
+
+}
+
+
+/* ---------------------------------------------------- */
+/* >= 1280px ( Mobile / Tablet / Laptop )
+/* ---------------------------------------------------- */
+@media (min-width: 1280px) {
+
+    .resp-position-content-container {
+
+        /* margin: 0px .5em; */
+        /*background-color: blue;*/
+        padding: 0px 24vw;        
+    }
+
+
+}
+
+
+/* ---------------------------------------------------- */
+/* >= 1580px ( Mobile / Tablet / Laptop )
+/* ---------------------------------------------------- */
+@media (min-width: 1580px) {
+
+    .resp-position-content-container {
+
+        /* margin: 0px .5em; */
+        /*background-color: blue;*/
+        padding: 0px 25vw;        
+    }
+
+}
+
+
+
+/* ---------------------------------------------------- */
+/* >= 1880px ( Tablet / Laptop )
+/* ---------------------------------------------------- */
+@media (min-width: 1880px) {
+
+    .resp-position-content-container {
+
+        /* margin: 0px .5em; */
+        /*background-color: blue;*/
+        padding: 0px 28vw;        
+    }
+
+}
+
+
+/* ---------------------------------------------------- */
+/* >= 1980px ( Tablet / Laptop )
+/* ---------------------------------------------------- */
+@media (min-width: 1980px) {
+
+    .resp-position-content-container {
+
+        /* margin: 0px .5em; */
+        /*background-color: yellow;*/
+        padding: 0px 29vw;        
+    }
+
+}
+
+/* ---------------------------------------------------- */
+/* >= 2380px ( Tablet / Laptop )
+/* ---------------------------------------------------- */
+@media (min-width: 2380px) {
+
+    .resp-position-content-container {
+
+        /* margin: 0px .5em; */
+        /*background-color: blue;*/
+        padding: 0px 30vw;        
+    }
+
+}
+
+/* ---------------------------------------------------- */
+/* >= 2580px ( Tablet / Laptop )
+/* ---------------------------------------------------- */
+@media (min-width: 2680px) {
+
+    .resp-position-content-container {
+
+        /* margin: 0px .5em; */
+        /*background-color: red;*/
+        padding: 0px 31vw;        
+    }
+
+}
+
+/* ---------------------------------------------------- */
+/* >= 3080px ( Tablet / Laptop )
+/* ---------------------------------------------------- */
+@media (min-width: 3080px) {
+
+    .resp-position-content-container {
+
+        /* margin: 0px .5em; */
+        /*background-color: red;*/
+        padding: 0px 32vw;        
+    }
+
+}
+
+
+/* ---------------------------------------------------- */
+/* >= 3380px ( Tablet / Laptop )
+/* ---------------------------------------------------- */
+@media (min-width: 3380px) {
+
+    .resp-position-content-container {
+
+        /* margin: 0px .5em; */
+        /*background-color: red;*/
+        padding: 0px 34vw;        
+    }
+
+}
+
+
+/* ---------------------------------------------------- */
+/* >= 3380px ( Tablet / Laptop )
+/* ---------------------------------------------------- */
+@media (min-width: 3880px) {
+
+    .resp-position-content-container {
+
+        /* margin: 0px .5em; */
+        /*background-color: red;*/
+        padding: 0px 36vw;        
+    }
+
+}
+
